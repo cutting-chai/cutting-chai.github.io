@@ -2,14 +2,16 @@
 <html lang="en">
 {% include head.html %}
 <body class="is-preload">
-{% include header.html %}
-  <div id="main" class="wrapper style1">
-    <div class="container">
-      {% include heading.html %}
-      {{ content }}
+  <div id="page-wrapper">
+  {% include header.html %}
+    <div id="main" class="wrapper style1">
+      <div class="container">
+        {% include heading.html %}
+        {{ content }}
+      </div>
     </div>
-  </div>
   {% include footer.html %}
+  </div>
   {% include scripts.html %}
 </body>
 </html>
